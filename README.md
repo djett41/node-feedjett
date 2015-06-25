@@ -125,15 +125,34 @@ customizations assume that the `normalize` option is not set to `false`.
 
 - `blackList` - {Array} - Define an array of String properties in order to disable parsing for specific normalized
   properties.  For example if you want all normalized properties to be parsed for a meta or item node except for
-  description and updatedDate, then you would set `options.blackList = ['description', 'updatedDate']`.  This would
-  let FeedJett know to NOT call the parseDescription or parseUpdatedDate parser functions, thus excluding
-  both properties from the result meta or item object.  These values apply to both `meta` and `item`.
+  description and updatedDate, then you would set these in the blackList array.  This would let FeedJett know to NOT
+  call the parseDescription or parseUpdatedDate parser functions, thus excluding both properties from the result meta
+  or item object.  These values apply to both `meta` and `item`.
 
 - `whiteList` - {Array} - Define an array of String properties in order to restrict parsing for ONLY the specified
   normalized properties.  For example if you only want the result object to contain a title, description, link, and
-  pubDate, you would set `options.whiteList = ['title', 'description', 'link', 'pubDate']`.  This would let FeedJett
-  know to call ONLY the parser functions associated with these normalized properties and nothing else.  These values
-  apply to both `meta` and `item`.  Whitelisting only the properties you require can speed up processing.
+  pubDate, you would set these in the whiteList array.  This would let FeedJett know to call ONLY the parser functions
+  associated with these normalized properties and nothing else.  These values apply to both `meta` and `item`.
+  Whitelisting only the properties you require can speed up processing.
+
+NOTE: You can only define either `blackList` OR `whiteList` on options.  If both are defined, `whiteList` will take
+precedence
+
+```js
+
+
+var options = {
+  blackList = ['description', 'updatedDate']
+};
+
+//OR!! Don't define both!!!
+
+var options = {
+  whiteList = ['title', 'description', 'link', 'pubDate']
+};
+var feedjett = new FeedJett(options);  //... other feedjett logic as shown in earlier section
+
+```
 
 ### Parsing Function Customizations
 
