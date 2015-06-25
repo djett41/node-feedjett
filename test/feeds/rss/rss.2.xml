@@ -1,0 +1,53 @@
+<?xml version="1.0"?>
+<rss version="2.0"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd"
+     xmlns:content="http://purl.org/rss/1.0/modules/content/"
+     xmlns:media="http://search.yahoo.com/mrss/"
+     xmlns:pheedo="http://www.pheedo.com/namespace/pheedo" >
+    <channel>
+        <media:copyright>Copyright © 2015 Test.com. media:copyright</media:copyright>
+        <dc:rights>Copyright © 2015 Test.com. dc:rights</dc:rights>
+        <itunes:summary>Itunes summary text!!</itunes:summary>
+        <dc:language>en-us (dc)</dc:language>
+        <managingEditor>editor@ledger-test.com (editor name)</managingEditor>
+        <webMaster>news-feedback@test.co.uk (Web Master)</webMaster>
+        <image>https://testimage/rss.jpg</image>
+        <itunes:image href="https://testitunesimage/rss.jpg"></itunes:image>
+        <generator version="7.00">Blogger</generator>
+        <link>http://testlink/firstlink</link>
+        <link>http://testlink/secondlink</link>
+        <lastBuildDate>Tue, 23 Jun 2015 01:38:22 ET</lastBuildDate>
+        <dc:date>2015-06-23T07:37:20Z</dc:date>
+        <publishedDate>2015-01-11T01:50:00Z</publishedDate>
+        <media:category scheme="http://dmoz.org" label="Ace Ventura - Pet Detective">
+            Arts/Movies/Titles/A/Ace_Ventura_Series/Ace_Ventura_ -_Pet_Detective
+        </media:category>
+        <dc:subject>Arts Brushes</dc:subject>
+
+        <item>
+            <title type='text'>Will this midfielder be the next Premier League player to move to MLS?</title>
+            <itunes:summary>
+                Test summary for itunes
+            </itunes:summary>
+            <content:encoded>
+                <![CDATA[<p>Test encoded content for item</p>]]>
+            </content:encoded>
+            <dc:creator>Alan Smith</dc:creator>
+            <itunes:author>John Ricketts</itunes:author>
+            <dc:publisher>University of Bath</dc:publisher>
+            <itunes:owner>
+                <itunes:name>
+                    Itunes Owner Name - An Blog and Mobile Site for iOS and Android
+                </itunes:name>
+                <itunes:email>matt@test.com</itunes:email>
+            </itunes:owner>
+            <pheedo:origlink>http://www.test.com/pheedo/resource</pheedo:origlink>
+            <source>Test Feeds</source>
+            <image>https://testimage/rss.jpg</image>
+            <guid isPermaLink="false">tag://guid_test</guid>
+            <dc:date>2015-06-23T07:37:20Z</dc:date>
+            <publishedDate>2015-01-11T01:50:00Z</publishedDate>
+        </item>
+    </channel>
+</rss>

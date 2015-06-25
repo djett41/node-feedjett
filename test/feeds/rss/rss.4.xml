@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:media="http://search.yahoo.com/mrss/"
+     xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:admin="http://webns.net/mvcb/">
+    <channel>
+        <dc:creator>Alan Smith</dc:creator>
+        <itunes:author>John Ricketts</itunes:author>
+        <dc:publisher>University of Bath</dc:publisher>
+        <itunes:owner>
+            <itunes:name>
+                Itunes Owner Name - An Blog and Mobile Site for iOS and Android
+            </itunes:name>
+            <itunes:email>matt@test.com</itunes:email>
+        </itunes:owner>
+        <media:thumbnail url="https://testmediathumbnail/rss.jpg"></media:thumbnail>
+        <admin:generatorAgent rdf:resource="http://testengine.com/"/>
+        <atom10:link xmlns:atom10="http://www.w3.org/2005/Atom" rel="hub" href="http://atom10.com/hub" />
+        <atom10:link xmlns:atom10="http://www.w3.org/2005/Atom" rel="self" href="http://atom10.com/self" />
+
+        <item>
+            <title>Past success doesn't diminish Stanley Cup finals' excitement for Blackhawks</title>
+            <title>Debate: Are the Blackhawks a dynasty?</title>
+            <dc:publisher>University of Bath</dc:publisher>
+            <itunes:owner>
+                <itunes:name>
+                    Itunes Owner Name - An Blog and Mobile Site for iOS and Android
+                </itunes:name>
+                <itunes:email>matt@test.com</itunes:email>
+            </itunes:owner>
+            <media:content>
+                <media:thumbnail url="http://mediacontentthumbnail.com/test.jpg"></media:thumbnail>
+            </media:content>
+            <media:group>
+                <media:thumbnail url="http://mediagroupthumbnail.com/test.jpg"></media:thumbnail>
+            </media:group>
+        </item>
+    </channel>
+</rss>

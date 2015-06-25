@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0"
+     xmlns:media="http://search.yahoo.com/mrss/"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:content="http://purl.org/rss/1.0/modules/content/"
+     xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd"
+     xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <media:copyright>Copyright © 2015 Test.com. media:copyright</media:copyright>
+        <webMaster>news-feedback@test.co.uk (Web Master)</webMaster>
+        <dc:creator>Alan Smith</dc:creator>
+        <itunes:image href="https://testitunesimage/rss.jpg"></itunes:image>
+        <media:thumbnail url="https://testmediathumbnail/rss.jpg"></media:thumbnail>
+        <generator version="7.00" uri="http://www.blogger.com/">Blogger</generator>
+        <atom:link href="http://example.com/self.xml" rel="self" />
+        <atom:link href="http://example.com/alternate.xml" rel="alternate" type="application/rss+xml" />
+        <publishedDate>2015-01-11T01:50:00Z</publishedDate>
+
+        <item>
+            <title>Veteran leadership key to young Lightning's success</title>
+            <content:encoded>
+                <![CDATA[<p>Test encoded content for item</p>]]>
+            </content:encoded>
+            <itunes:author>John Ricketts</itunes:author>
+            <dc:publisher>University of Bath</dc:publisher>
+            <itunes:owner>
+                <itunes:name>
+                    Itunes Owner Name - An Blog and Mobile Site for iOS and Android
+                </itunes:name>
+                <itunes:email>matt@test.com</itunes:email>
+            </itunes:owner>
+            <source url="http://testsports.com/rss"></source>
+            <media:thumbnail url="http://mediathumbnail.com/test.jpg"></media:thumbnail>
+            <media:content>
+                <media:thumbnail url="http://mediacontentthumbnail.com/test.jpg"></media:thumbnail>
+            </media:content>
+            <media:group>
+                <media:thumbnail url="http://mediagroupthumbnail.com/test.jpg"></media:thumbnail>
+            </media:group>
+            <guid isPermaLink="false">http://guid_test.com/?p=43272</guid>
+            <publishedDate>2015-01-11T01:50:00Z</publishedDate>
+        </item>
+    </channel>
+</rss>

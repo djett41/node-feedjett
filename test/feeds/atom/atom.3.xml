@@ -1,0 +1,13 @@
+<feed xmlns="http://www.w3.org/2005/Atom"
+      xml:lang="en-US"
+      xml:base="http://testbase.com/">
+
+    <link rel="alternate" href="http://www.example.com/alternate" type="application/rss+xml" />
+    <link rel="self" href="http://www.example.com/self.xml" />
+
+    <entry>
+        <source>
+            <link href="http://testsports.com/atom" />
+        </source>
+    </entry>
+</feed>

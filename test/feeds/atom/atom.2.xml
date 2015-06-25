@@ -1,0 +1,30 @@
+<feed xml:base="http://testbase.com/"
+      xmlns="http://www.w3.org/2005/Atom"
+      xmlns:dc="http://purl.org/dc/elements/1.1/"
+      xmlns:gd="http://schemas.google.com/g/2005">
+    <dc:rights>© 2015 Test dc:rights LLC</dc:rights>
+    <icon>Button_Icon_Red.svg</icon>
+    <logo>logo/rss.jpg</logo>
+    <author>
+        <uri>http://www.blogger.com/profile/03521809778977098687</uri>
+        <email>noreply@blogger.com</email>
+        <gd:image rel='http://schemas.google.com/g/2005#thumbnail' width='16' height='16' src='http://img2.blogblog.com/img/b16-rounded.gif'/>
+    </author>
+    <link rel="alternate" href="http://www.example.com/alternate" type="application/rss+xml" />
+    <dc:date>2014-10-19T20:43:00Z</dc:date>
+
+    <entry>
+        <link rel='replies' type='text/html' href='http://www.test.com/comment.g?blogID=1234' title='0 Comments'/>
+        <link rel='replies' type='application/atom+xml' href='http://test.blogspot.com/feeds/3456/comments/default' title='Post Comments'/>
+        <content>Test content for ATOM</content>
+        <author>
+            <uri>http://www.blogger.com/profile/03521809778977098687</uri>
+            <email>noreply@blogger.com</email>
+            <gd:image rel='http://schemas.google.com/g/2005#thumbnail' width='16' height='16' src='http://img2.blogblog.com/img/b16-rounded.gif'/>
+        </author>
+        <source>
+            <title>Test Feeds</title>
+        </source>
+        <dc:date>2014-10-19T20:43:00Z</dc:date>
+    </entry>
+</feed>

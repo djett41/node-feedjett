@@ -1,0 +1,21 @@
+<rss version="2.0"
+     xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd"
+     xmlns:media="http://search.yahoo.com/mrss/"
+     xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <itunes:owner>
+            <itunes:name>
+                Itunes Owner Name - An Blog and Mobile Site for iOS and Android
+            </itunes:name>
+            <itunes:email>matt@test.com</itunes:email>
+        </itunes:owner>
+        <atom:id>https://atomid/test</atom:id>
+
+        <item>
+            <media:content medium="image" type="image/jpeg" url="http://testmediacontenturl/test.jpg"></media:content>
+            <media:group>
+                <media:content medium="image" type="image/jpeg" url="http://testmediagroupcontenturl/test.jpg"></media:content>
+            </media:group>
+        </item>
+    </channel>
+</rss>

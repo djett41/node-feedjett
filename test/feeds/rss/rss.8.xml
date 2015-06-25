@@ -1,0 +1,15 @@
+<rss version="2.0"
+     xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd"
+     xmlns:media="http://search.yahoo.com/mrss/">
+    <channel>
+        <itunes:owner>
+            <itunes:email>matt@test.com</itunes:email>
+        </itunes:owner>
+
+        <item>
+            <media:group>
+                <media:content medium="image" type="image/jpeg" url="http://testmediagroupcontenturl/test.jpg"></media:content>
+            </media:group>
+        </item>
+    </channel>
+</rss>

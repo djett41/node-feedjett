@@ -1,0 +1,27 @@
+<rss version="2.0"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:media="http://search.yahoo.com/mrss/"
+     xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd"
+     xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <dc:publisher>University of Bath</dc:publisher>
+        <itunes:owner>
+            <itunes:name>
+                Itunes Owner Name - An Blog and Mobile Site for iOS and Android
+            </itunes:name>
+            <itunes:email>matt@test.com</itunes:email>
+        </itunes:owner>
+        <atom:id>tag:blogger.com,1999:blog-16702745</atom:id>
+
+        <item>
+            <itunes:owner>
+                <itunes:email>matt@test.com</itunes:email>
+            </itunes:owner>
+            <media:content medium="image" type="image/jpeg" url="http://testmediacontenturl/test.jpg"></media:content>
+            <media:group>
+                <media:content medium="image" type="image/jpeg" url="http://testmediagroupcontenturl/test.jpg"></media:content>
+            </media:group>
+            <itunes:image href="http://itunesimage.com/test.jpg"></itunes:image>
+        </item>
+    </channel>
+</rss>

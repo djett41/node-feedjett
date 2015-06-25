@@ -1,0 +1,44 @@
+{
+  "name": "feedjett",
+  "author": "Devin Jett <djett41@gmail.com>",
+  "description": "Fast and customizable RSS Atom and RDF feed parser",
+  "version": "0.0.1",
+  "keywords": [
+    "rss",
+    "feed",
+    "atom",
+    "rdf",
+    "xml",
+    "syndication",
+    "rsscloud",
+    "pubsubhubbub"
+  ],
+  "homepage": "https://github.com/djett41/node-feedjett",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/djett41/node-feedjett.git"
+  },
+  "bugs": {
+    "url": "https://github.com/djett41/node-feedjett/issues"
+  },
+  "main": "lib/feedjett.js",
+  "engines": {
+    "node": ">= 0.10.0"
+  },
+  "dependencies": {
+    "addressparser": "0.3.2",
+    "lodash": "^3.9.3",
+    "sax": "1.1.1"
+  },
+  "devDependencies": {
+    "mocha": "2.2.5",
+    "chai": "2.3.0",
+    "request": "2.57.0",
+    "q": "1.2.0",
+    "feedparser": "1.0.1",
+    "readable-stream": "~1.0.17"
+  },
+  "scripts": {
+    "test": "mocha test/unit/**/*.js"
+  }
+}

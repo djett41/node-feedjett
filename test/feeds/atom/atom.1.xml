@@ -1,0 +1,55 @@
+<feed xmlns="http://www.w3.org/2005/Atom"
+      xml:lang="en-US"
+      xml:base="http://testbase.com/"
+      xmlns:dc="http://purl.org/dc/elements/1.1/"
+      xmlns:gd="http://schemas.google.com/g/2005">
+    <title>Test Atom title</title>
+    <dc:rights>© 2015 Test dc:rights LLC</dc:rights>
+    <rights>© 2015 Test rights LLC</rights>
+    <subtitle>Test Atom subtitle</subtitle>
+    <icon>https://upload.wikimedia.org/0/07/Button_Icon_Red.svg</icon>
+    <link rel="hub" href="http://www.example.com/hub" />
+    <link rel="alternate" href="http://www.example.com/alternate" />
+    <author>
+        <name>Jon Shepherd</name>
+        <uri>http://www.blogger.com/profile/03521809778977098687</uri>
+        <email>noreply@blogger.com</email>
+        <gd:image rel='http://schemas.google.com/g/2005#thumbnail' width='16' height='16' src='http://img2.blogblog.com/img/b16-rounded.gif'/>
+    </author>
+    <logo>https://testlogo/rss.jpg</logo>
+    <updated>2014-10-20T05:44:15Z</updated>
+    <published>Mon, 22 Jun 2015 13:49:00 PST</published>
+    <dc:date>2014-10-19T20:43:00Z</dc:date>
+
+    <entry>
+        <id>http://id_test.com/?p=28146</id>
+        <link rel='replies' type='application/atom+xml' href='http://test.blogspot.com/feeds/3456/comments/default' title='Post Comments'/>
+        <link rel='replies' type='text/html' href='http://www.test.com/comment.g?blogID=1234' title='0 Comments'/>
+        <link rel="canonical" href="http://www.example.com/product.php?item=swedish-fish" />
+        <link rel="alternate" href="http://www.example.com/alternate" />
+        <content type="html">
+            <img alt="" src="https://test.jpg" /><blockquote lang="en"> <p lang="en" dir="ltr">paragraph</p> block </blockquote>
+        </content>
+        <content>Test content for ATOM</content>
+        <summary>Test summary for ATOM</summary>
+        <author>
+            <name>Jon Shepherd</name>
+            <uri>http://www.blogger.com/profile/03521809778977098687</uri>
+            <email>noreply@blogger.com</email>
+            <gd:image rel='http://schemas.google.com/g/2005#thumbnail' width='16' height='16' src='http://img2.blogblog.com/img/b16-rounded.gif'/>
+        </author>
+        <source>
+            <title>Test Feeds</title>
+            <link href="http://testsports.com/atom" />
+        </source>
+        <updated>2015-05-11T16:45:00-04:00</updated>
+        <published>Mon, 22 Jun 2015 13:49:00 PST</published>
+        <dc:date>2014-10-19T20:43:00Z</dc:date>
+        <category term="Crazy News"/>
+        <category term="Political News"/>
+        <link rel="enclosure" href="http://media.test.com/1234.jpg" length="634706" type="image/jpg"/>
+        <link rel="enclosure" href="http://media.test.com/test.jpg" type="image"/>
+        <link rel="enclosure" href="http://media.test.com/test.jpg" type="image/jpg"/>
+        <category term="cat:Top Stories" scheme="http://www.sixapart.com/ns/types#category"/>
+    </entry>
+</feed>

@@ -1,0 +1,118 @@
+<?xml version="1.0"?>
+<rss version="2.0"
+     xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd"
+     xmlns:content="http://purl.org/rss/1.0/modules/content/"
+     xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+     xmlns:feedburner="http://rssnamespace.org/feedburner/ext/1.0"
+     xmlns:pheedo="http://www.pheedo.com/namespace/pheedo"
+     xmlns:media="http://search.yahoo.com/mrss/"
+     xmlns:a10="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>Get Some Football Test News</title>
+        <copyright>Copyright © 2015 Test.com. All rights reserved.</copyright>
+        <dc:rights>Copyright © 2015 Test.com. dc:rights</dc:rights>
+        <description>Description for meta tag</description>
+        <itunes:summary>Itunes summary text!!</itunes:summary>
+        <dc:language>en-us (dc)</dc:language>
+        <language>en-us</language>
+        <ttl>10</ttl>
+        <author>P.D. Starr</author>
+        <managingEditor>editor@ledger-test.com (editor name)</managingEditor>
+        <webMaster>news-feedback@test.co.uk (Web Master)</webMaster>
+        <sy:updatePeriod>hourly</sy:updatePeriod>
+        <sy:updateFrequency>1</sy:updateFrequency>
+        <sy:updateBase>yyyy-mm-ddThh:mm</sy:updateBase>
+        <cloud domain="testsite.com" port="80" path="/?rsscloud=notify" registerProcedure="" protocol="http-post"/>
+        <image>
+            <title>Image title</title>
+            <url>https://testimageurl/rss.jpg</url>
+        </image>
+        <itunes:image href="https://testitunesimage/rss.jpg"></itunes:image>
+        <generator>Blogger</generator>
+        <link>http://testlink/somelink</link>
+        <lastBuildDate>Mon, 22 Jun 2015 14:01:59 PDT</lastBuildDate>
+        <pubDate>Mon, 22 Jun 2015 13:49:00 PST</pubDate>
+        <dc:date>2015-06-23T07:37:20Z</dc:date>
+        <atom10:link xmlns:atom10="http://www.w3.org/2005/Atom" rel="self" type="application/rss+xml" href="http://atom10.com/self" />
+        <category>Home</category>
+        <dc:subject>Home</dc:subject>
+        <category>Scout.com > NFL > National League Team</category>
+        <itunes:category text="Sports & Recreation">
+            <itunes:category text="Professional"/>
+            <itunes:category text="Seabass"/>
+        </itunes:category>
+
+        <item>
+            <title><![CDATA[ Manziel apologizes, vows to regain Browns' trust ]]></title>
+            <wfw:commentRss>http://www.test.com/feed/</wfw:commentRss>
+            <comments>
+                http://testcomments.com/#comments
+            </comments>
+            <content>
+                <div>Some other content</div>
+            </content>
+            <content:encoded>
+                <![CDATA[<div class="center"><img src="https://test.com" width="388" height="291" /></div>]]>
+            </content:encoded>
+            <description>
+                <![CDATA[<a href='test'><img style="width:100%"/></a>]]>
+                <![CDATA[<div>Test Description in CDATA.</div>   ]]>
+            </description>
+            <itunes:summary>
+                Test summary for itunes
+            </itunes:summary>
+            <author>P.D. Starr</author>
+            <content:encoded>
+                <![CDATA[<p>Test encoded content for item</p>]]>
+            </content:encoded>
+            <id>http://id_test.com/?p=28146</id>
+            <link>http://link/somelink</link>
+            <guid isPermaLink="false">http://guid_test.com/?p=43272</guid>
+            <feedburner:origLink>http://www.test.com/feedburner/resource</feedburner:origLink>
+            <pheedo:origlink>http://www.test.com/pheedo/resource</pheedo:origlink>
+            <source url="http://testsports.com/rss">Test Feeds</source>
+            <image>
+                <title>Image title</title>
+                <url>https://testimageurl/rss.jpg</url>
+            </image>
+            <a10:updated>2015-06-20T18:51:00-04:00</a10:updated>
+            <pubDate>Fri, 19 Jun 2015 20:15:28 +0000</pubDate>
+            <dc:date>2015-06-23T07:37:20Z</dc:date>
+            <enclosure url="http://www.test.com/image/view/-/test.jpg" length="54141" type="image/jpeg"/>
+            <enclosure url="http://www.test.com/image/view/-/test.jpg" length="2222" type="image/jpeg"/>
+            <media:content url="https://testcontent.com/type.jpg?w=300" type="image/jpeg" width="300" height="169"/>
+            <media:content url="https://testcontent.com/medium.jpg?w=300" medium="image" width="300" height="169"/>
+            <media:content url="http://media.test.com/media/image/153/1535447.jpg">
+                <media:title>
+                    Test media title
+                </media:title>
+                <media:credit>Scout</media:credit>
+            </media:content>
+            <enc:enclosure url="http://www.testenc.com/test.jpg" length="8888" type="image/jpeg"/>
+            <enc:enclosure rdf:resource="http://www.testrdf.com/test.jpg" length="4322" type="image/jpeg"/>
+            <category>
+                <![CDATA[ Game Day ]]>
+            </category>
+            <category>
+                <![CDATA[ JETBLAST 2014-15 ]]>
+            </category>
+            <category>
+                <![CDATA[ Adam Lowry ]]>
+            </category>
+            <category>
+                <![CDATA[ Anaheim Ducks ]]>
+            </category>
+            <category>
+                <![CDATA[ popular ]]>
+            </category>
+            <category>
+                <![CDATA[ Ricard Rakell ]]>
+            </category>
+            <category>
+                <![CDATA[ Winnipeg Jets ]]>
+            </category>
+        </item>
+    </channel>
+</rss>

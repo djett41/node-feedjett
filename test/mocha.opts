@@ -1,0 +1,3 @@
+--require test/setup.js
+--reporter List
+--timeout 800s

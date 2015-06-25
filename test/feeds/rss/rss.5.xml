@@ -1,0 +1,30 @@
+<rss version="2.0"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:media="http://search.yahoo.com/mrss/"
+     xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd">
+    <channel>
+        <itunes:author>John Ricketts</itunes:author>
+        <dc:publisher>University of Bath</dc:publisher>
+        <itunes:owner>
+            <itunes:name>
+                Itunes Owner Name - An Blog and Mobile Site for iOS and Android
+            </itunes:name>
+            <itunes:email>matt@test.com</itunes:email>
+        </itunes:owner>
+        <atom10:link xmlns:atom10="http://www.w3.org/2005/Atom" rel="self" type="application/rss+xml" href="http://atom10.com/test" />
+
+        <item>
+            <title>Test &amp; title</title>
+            <itunes:owner>
+                <itunes:name>
+                    Itunes Owner Name - An Blog and Mobile Site for iOS and Android
+                </itunes:name>
+                <itunes:email>matt@test.com</itunes:email>
+            </itunes:owner>
+            <media:group>
+                <media:thumbnail url="http://mediagroupthumbnail.com/test.jpg"></media:thumbnail>
+            </media:group>
+            <itunes:image href="http://itunesimage.com/test.jpg"></itunes:image>
+        </item>
+    </channel>
+</rss>
