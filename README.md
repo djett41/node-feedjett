@@ -1,7 +1,7 @@
 [![Build Status](https://secure.travis-ci.org/djett41/node-feedjett.png?branch=master)](https://travis-ci.org/feedjett/node-feedjett)
 
 [![NPM](https://nodei.co/npm/feedjett.png?downloads=true&stars=true)](https://nodei.co/npm/feedjett/)
-#  FeedJett - Robust RSS, Atom, and RDF feed parsing in Node.js
+#  FeedJett - A Fast (Like a Jettttt) Robust RSS, Atom, and RDF feed parser in Node.js
 
 This module is inspired by Dan Mactough's [node-feedparser](https://github.com/danmactough/node-feedparser) module
 which parses RSS, Atom, and RDF feeds using Isaac Schlueter's sax parser.
@@ -17,7 +17,7 @@ to parse feeds, though it does contain many enhancements and features as listed 
 - Allows you to whitelist or blacklist specific normalized properties to be parsed
 - Parsing functions are isolated increasing testability; all parsing logic is unit tested
 - Additional properties and enhanced parsing for some properties
-- Code refactored for readability, speed (hence the term Jett ;-)), and dynamic code reuse
+- Code refactored for readability, speed, and dynamic code reuse
 
 
 ## Installation
@@ -377,6 +377,7 @@ NOTE:
 * @'          - {Object}  Contains any attributes of the top level tag (feed, rss, etc)
 * #xml        - {Object}  The parsed xml tag and/or attributes
 * #type       - {String}  The type of feed (rss, atom, or rdf)
+
 
   2. If options' parseRawNode is true, meta will include a `raw` property that contains all raw nodes from the feed
   3. FeedJett icon, and updatedDate are same as FeedParser favicon, and date.  FeedJett adds updateInfo
