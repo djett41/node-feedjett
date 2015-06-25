@@ -1,6 +1,6 @@
-[![Build Status](https://secure.travis-ci.org/djett41/node-feedjett.png?branch=master)](https://travis-ci.org/feedjett/node-feedjett)
+[![Build Status](https://secure.travis-ci.org/djett41/node-feedjett.png?branch=master)](https://travis-ci.org/djett41/node-feedjett)
 
-[![NPM](https://nodei.co/npm/feedjett.png?downloads=true&stars=true)](https://nodei.co/npm/feedjett/)
+[![NPM](https://www.npmjs.com/npm/feedjett.png?downloads=true&stars=true)](https://www.npmjs.com/npm/feedjett/)
 #  FeedJett - A Fast Robust RSS, Atom, and RDF feed parser in Node.js - Like a Jett ;-)
 
 This module is inspired by Dan Mactough's [node-feedparser](https://github.com/danmactough/node-feedparser) module
