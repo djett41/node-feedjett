@@ -10,7 +10,6 @@ describe('Parser | Updated Date |', function() {
     before(function(done) {
       var feeds = [
         rssDir + 'rss.1.xml',
-        rssDir + 'rss.2.xml',
         atomDir + 'atom.1.xml'
       ];
 
@@ -24,12 +23,8 @@ describe('Parser | Updated Date |', function() {
       assert.equal(results[0].updatedDate.getTime(), new Date('2015-06-22T21:01:59.000Z').getTime());
     });
 
-    it('should parse updatedDate with invalid timezone to valid date with correct timezone', function () {
-      assert.equal(results[1].updatedDate.getTime(), new Date('2015-06-23T05:38:22.000Z').getTime());
-    });
-
     it('should parse updated to updatedDate for ATOM feeds', function () {
-      assert.equal(results[2].updatedDate.getTime(), new Date('2014-10-20T05:44:15Z').getTime());
+      assert.equal(results[1].updatedDate.getTime(), new Date('2014-10-20T05:44:15Z').getTime());
     });
   });
 
