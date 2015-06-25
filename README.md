@@ -222,7 +222,7 @@ would write the following code.
 
 ```js
 
-FeedJett.addCustomParser('myProperty', ['item', 'meta], 'parseMyProperty', function (node, nodeType, feedType) {
+FeedJett.addCustomParser('myProperty', ['item', 'meta'], 'parseMyProperty', function (node, nodeType, feedType) {
 
   //custom logic for parsing and normalizing myProperty.  For example if you wanted the text value of atom:id to be
   //the value of myProperty, you would do the following.. ('#' are for text values, @ for attribute objects)
