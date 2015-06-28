@@ -2,7 +2,7 @@
   "name": "feedjett",
   "author": "Devin Jett <djett41@gmail.com>",
   "description": "Fast and customizable RSS Atom and RDF feed parser",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "keywords": [
     "rss",
     "feed",
