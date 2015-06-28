@@ -258,13 +258,13 @@ as parameters.  No return value is needed as you can add properties on the meta 
 ```js
 
 var options = {
-  afterParseItem: function (item, nodeType, feedType) {
+  afterParseItem: function (item, feedType) {
     //custom logic.. set link to guid if the parsing functions couldn't normalize link
     if (!item.link) {
       item.link = item.guid;
     }
   },
-  afterParseMeta: function (meta, nodeType, feedType) {
+  afterParseMeta: function (meta, feedType) {
     //custom logic.. set updatedDate to pubDate if the parsing functions couldn't normalize updatedDate
     if (!meta.updatedDate) {
       meta.updatedDate = meta.pubDate;
@@ -292,11 +292,11 @@ A boolean value `true` or `false` must be returned
 ```js
 
 var options = {
-  isMetaValid: function (meta, nodeType, feedType) {
+  isMetaValid: function (meta, feedType) {
     //custom logic.. mark meta valid and emit meta only if feedType is rss..
     return feedType === 'rss';
   },
-  isItemValid: function (item, nodeType, feedType) {
+  isItemValid: function (item, feedType) {
     //custom logic.. mark an item as valid only if it contains a pubDate
     return !!item.pubDate;
   }

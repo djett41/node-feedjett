@@ -31,15 +31,13 @@
   "dependencies": {
     "addressparser": "0.3.2",
     "lodash": "^3.9.3",
-    "sax": "1.1.1"
+    "sax": "1.1.1",
+    "readable-stream": "~1.0.17"
   },
   "devDependencies": {
     "mocha": "2.2.5",
     "chai": "2.3.0",
-    "request": "2.57.0",
-    "q": "1.2.0",
-    "feedparser": "1.0.1",
-    "readable-stream": "~1.0.17"
+    "request": "2.57.0"
   },
   "scripts": {
     "test": "mocha test/unit/**/*.js"
