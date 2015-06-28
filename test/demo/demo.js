@@ -1,17 +1,15 @@
 describe('Demo | Feeds |', function() {
   var request = require('request');
-  var Q = require("q");
   var rootdir = __dirname + '/../../';
   var FeedJett =  require(rootdir + 'lib/feedjett.js');
 
   var results = [];
 
-  function getResults (feedUrl) {
-    var deferred = Q.defer();
+  function getResults (feedUrl, callback) {
     var articles = [];
 
     var error = function () {
-      deferred.resolve([]);
+      callback([]);
     };
 
     var afterParseItem = function (item, feedType) {
@@ -25,7 +23,7 @@ describe('Demo | Feeds |', function() {
         articles.push(article);
       }
     }).on('end', function () {
-        deferred.resolve(articles);
+      callback(articles);
       })
       .on('error', error);
 
@@ -37,8 +35,6 @@ describe('Demo | Feeds |', function() {
         res.pipe(feedParser);
       })
       .on('error', error);
-
-    return deferred.promise;
   }
 
   before(function(done) {
@@ -47,14 +43,16 @@ describe('Demo | Feeds |', function() {
       'http://www.npr.org/rss/rss.php?id=1014',
       'http://feeds.abcnews.com/abcnews/usheadlines'
     ];
+    var count = 0;
 
-    var promises = feeds.map(function (feedUrl) {
-      return getResults(feedUrl);
-    });
-
-    Q.all(promises).spread(function () {
-      results = results.concat.apply(results, arguments);
-      done();
+    feeds.forEach(function (feedUrl) {
+      getResults(feedUrl, function (headlines) {
+        count++;
+        results = results.concat(headlines);
+        if (count === feeds.length) {
+          done();
+        }
+      })
     });
 
   });
