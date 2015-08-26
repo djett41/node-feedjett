@@ -4,7 +4,7 @@ describe('FeedJett | Options |', function() {
   var rssDir = rootdir + 'test/feeds/rss/';
 
   it('should set default options', function () {
-    var feedJett = new FeedJett();
+    var feedJett = FeedJett.createInstance();
     var options = feedJett.options;
 
     expect(options.strict).to.be.false;
@@ -19,7 +19,7 @@ describe('FeedJett | Options |', function() {
   });
 
   it('should change default options', function () {
-    var feedJett = new FeedJett({
+    var feedJett = FeedJett.createInstance({
       strict: true,
       normalize: false,
       addMeta: false,
@@ -42,7 +42,7 @@ describe('FeedJett | Options |', function() {
   });
 
   it('should whiteList/enable specific properties and hold precedence over blacklist', function () {
-    var feedJett = new FeedJett({
+    var feedJett = FeedJett.createInstance({
       whiteList: ['title', 'description', 'link', 'pubDate']
     });
 
@@ -55,7 +55,7 @@ describe('FeedJett | Options |', function() {
   });
 
   it('should blackList/disable specific properties', function () {
-    var feedJett = new FeedJett({
+    var feedJett = FeedJett.createInstance({
       blackList: ['title', 'description', 'link', 'pubDate', 'xmlUrl', 'origLink']
     });
 
@@ -69,7 +69,7 @@ describe('FeedJett | Options |', function() {
 
   it('should add a custom parser for items to FeedJett', function () {
     FeedJett.addCustomParser('custom', 'item', 'parseCustom', function (node, nodeType, feedType) {});
-    var feedJett = new FeedJett();
+    var feedJett = FeedJett.createInstance();
 
     expect(feedJett.enabledProps.meta).to.have.length(15);
     expect(feedJett.enabledProps.item).to.have.length(16);
@@ -107,7 +107,7 @@ describe('FeedJett | Options |', function() {
         parseContent: test
       };
 
-      var feedJett = new FeedJett(options)
+      var feedJett = FeedJett.createInstance(options)
         .on('meta', function (result) {
         }).on('readable', function () {
           items.push(this.read());

@@ -7,7 +7,7 @@ describe('FeedJett | Meta |', function() {
     var meta = null, count = 0;
 
     before(function(done) {
-      var feedJett = new FeedJett({parseRawNode: true})
+      var feedJett = FeedJett.createInstance({parseRawNode: true})
         .on('meta', function (result) {
           count++;
           meta = result;
@@ -71,7 +71,7 @@ describe('FeedJett | Meta |', function() {
     var meta = null;
 
     before(function(done) {
-      var feedJett = new FeedJett({parseMeta: false})
+      var feedJett = FeedJett.createInstance({parseMeta: false})
         .on('meta', function (result) {
           meta = result;
         }).on('readable', function () {
@@ -97,7 +97,7 @@ describe('FeedJett | Meta |', function() {
         meta.testProp = feedType;
       };
 
-      var feedJett = new FeedJett({normalize:false, afterParseMeta:afterParseMeta})
+      var feedJett = FeedJett.createInstance({normalize:false, afterParseMeta:afterParseMeta})
         .on('meta', function (result) {
           meta = result;
         }).on('readable', function () {
@@ -141,7 +141,7 @@ describe('FeedJett | Meta |', function() {
         return false;
       };
 
-      var feedJett = new FeedJett({isMetaValid: isMetaValid})
+      var feedJett = FeedJett.createInstance({isMetaValid: isMetaValid})
         .on('meta', function (result) {
           meta = result;
         }).on('readable', function () {

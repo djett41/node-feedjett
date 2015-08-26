@@ -43,7 +43,8 @@ function getFeedResults (type, feeds, done) {
   feeds.forEach(function (feed) {
     order.push(feed);
 
-    var feedJett = new FeedJett({feedUrl: feed}), itemResults;
+    var feedJett = FeedJett.createInstance({feedUrl: feed}),
+        itemResults;
 
     if (type === 'meta') {
       feedJett.on('meta', function (meta) {
