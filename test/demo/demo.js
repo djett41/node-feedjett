@@ -16,7 +16,7 @@ describe('Demo | Feeds |', function() {
       item.customProp = 'customProp!';
     };
 
-    var feedParser = new FeedJett({ parseRawNode: true, feedUrl: feedUrl, afterParseItem: afterParseItem });
+    var feedParser = FeedJett.createInstance({ parseRawNode: true, feedUrl: feedUrl, afterParseItem: afterParseItem });
     feedParser.on('readable', function () {
       var article;
       while (article = this.read()) {

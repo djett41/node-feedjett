@@ -9,7 +9,7 @@ describe('FeedJett | Item |', function() {
 
     before(function(done) {
       var items = [];
-      var feedJett = new FeedJett({parseRawNode: true})
+      var feedJett = FeedJett.createInstance({parseRawNode: true})
         .on('readable', function () {
           items.push(this.read());
         }).on('end', function () {
@@ -69,7 +69,7 @@ describe('FeedJett | Item |', function() {
         item.testProp = feedType;
       };
 
-      var feedJett = new FeedJett({addMeta:false, normalize: false, afterParseItem:afterParseItem})
+      var feedJett = FeedJett.createInstance({addMeta:false, normalize: false, afterParseItem:afterParseItem})
         .on('meta', function (result) {
           meta = result;
         }).on('readable', function () {
@@ -109,7 +109,7 @@ describe('FeedJett | Item |', function() {
     before(function(done) {
       var items = [];
 
-      var feedJett = new FeedJett({parseMeta:false})
+      var feedJett = FeedJett.createInstance({parseMeta:false})
         .on('readable', function () {
           items.push(this.read());
         }).on('end', function () {
@@ -136,7 +136,7 @@ describe('FeedJett | Item |', function() {
         return false;
       };
 
-      var feedJett = new FeedJett({isItemValid:isItemValid})
+      var feedJett = FeedJett.createInstance({isItemValid:isItemValid})
         .on('readable', function () {
           items.push(this.read());
         }).on('end', function () {
