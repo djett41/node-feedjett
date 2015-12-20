@@ -108,6 +108,8 @@ NOTE: some of the following options may be similar to FeedParser but syntactical
 
 - `MAX_BUFFER_LENGTH` - (Default: 16K `(16 * 1024 * 1024)` - Default buffer length (npm sax option)
 
+- `itemLimit` - (Default: undefined) set to an integer to enforce a limit on the number of items within a single feed
+
 - `parseMeta` - (Default: `true`) - set to `false` to skip parsing AND emitting the `meta` object.  This can speed up
   processing if you know you don't need or want `meta` information.
 
