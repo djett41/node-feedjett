@@ -2,6 +2,7 @@ describe('FeedJett | Options |', function() {
   var rootdir = __dirname + '/../../../';
   var FeedJett =  require(rootdir + 'lib/feedjett.js');
   var rssDir = rootdir + 'test/feeds/rss/';
+  var helper =  require(rootdir + 'test/helper.js');
 
   it('should set default options', function () {
     var feedJett = FeedJett.createInstance();
@@ -136,4 +137,50 @@ describe('FeedJett | Options |', function() {
 
   });
 
+  describe('Override property names | ', function () {
+    before(function () {
+      this.feeds = [rssDir + 'rss.1.xml'];
+
+      FeedJett.overridePropNames({
+        description : 'summary',
+        link : 'url',
+        pubDate : 'pub_date',
+        author : 'author',
+        content : 'content',
+        guid : 'rssFeedGuid',
+        updatedDate : 'updated_date'
+      });
+    });
+
+    after(function () {
+      FeedJett.overridePropNames({
+        summary: 'description',
+        url: 'link',
+        pub_date: 'pubDate',
+        rssFeedGuid: 'guid',
+        updated_date: 'updatedDate'
+      });
+    });
+
+    it('should override properties with custom names', function (done) {
+      helper.getFeedResults('item', this.feeds, function (data) {
+        var firstItem = data[0];
+        expect(firstItem.summary).to.be.defined;
+        expect(firstItem.url).to.be.defined;
+        expect(firstItem.pub_date).to.be.defined;
+        expect(firstItem.author).to.be.defined;
+        expect(firstItem.content).to.be.defined;
+        expect(firstItem.rssFeedGuid).to.be.defined;
+        expect(firstItem.updated_date).to.be.defined;
+
+        expect(firstItem.description).to.be.undefined;
+        expect(firstItem.link).to.be.undefined;
+        expect(firstItem.pubDate).to.be.undefined;
+        expect(firstItem.guid).to.be.undefined;
+        expect(firstItem.updatedDate).to.be.undefined;
+
+        done();
+      });
+    });
+  });
 });

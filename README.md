@@ -213,9 +213,36 @@ var feedjett = FeedJett.createInstance(options);  //... other feedjett logic as 
 
 ```
 
+### Custom Property names via `FeedJett.overridePropNames`
+
+FeedParser provides a static function for overriding the names of the default normalized properties.  All you have
+to do is pass in a mapping object and the feed item/meta will have your custom property name instead of the default.  
+The mapping object keys should be the original property name, and the value should be your custom property name
+
+Example..
+
+```js
+
+FeedJett.overridePropNames({
+  description : 'summary',
+  link : 'url',
+  pubDate : 'pub_date',
+  guid : 'id'
+});
+
+var feedjett = FeedJett.createInstance();  //... other feedjett logic as shown in earlier section
+
+```
+
+Now when you listen to readable for items or the meta event for meta, the result object will include `myProperty` which
+would have a value that equals the return value of `parseMyProperty`.  Behind the scenes, addCustomParser will add the
+property to the normalizedProps meta or item Arrays, then add the `myProperty -> parseMyProperty` mapping to the
+`propertyParserMap` object, then dynamically invoke the custom function and set the property on the result object.
+
+
 ### Custom Properties and Parsers via `FeedJett.addCustomParser`
 
-FeedParser provides a static function for adding custom properties not avialable by FeedJett as well as providing a
+FeedJett provides a static function for adding custom properties not avialable by FeedJett as well as providing a
 custom parser function to normalize the property.  To achieve this you can call the `FeedJett.addCustomParser`, passing
 in the custom property name, nodeType for the custom property, parser function name, and parser function.
 
