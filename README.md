@@ -144,13 +144,13 @@ precedence
 
 
 var options = {
-  blackList = ['description', 'updatedDate']
+  blackList: ['description', 'updatedDate']
 };
 
 //OR!! Don't define both!!!
 
 var options = {
-  whiteList = ['title', 'description', 'link', 'pubDate']
+  whiteList: ['title', 'description', 'link', 'pubDate']
 };
 var feedjett = FeedJett.createInstance(options);  //... other feedjett logic as shown in earlier section
 
