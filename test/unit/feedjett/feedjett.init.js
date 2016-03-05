@@ -5,7 +5,6 @@ describe('FeedJett | Init |', function() {
   it('should initialize instance vars', function () {
     var feedJett = FeedJett.createInstance();
 
-    console.log(FeedJett.utils)
     expect(feedJett.meta).to.deep.equal({ '#ns': [], '@': [], '#xml': {} });
     expect(feedJett.isMetaParsed).to.be.false;
     expect(feedJett.stack).to.be.empty;
