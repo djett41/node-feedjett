@@ -153,4 +153,20 @@ describe('FeedJett | Item |', function() {
 
   });
 
+  describe('itemLimit eq 2 |', function() {
+    var items = [];
+
+    before(function(done) {
+      var feedJett = FeedJett.createInstance({itemLimit:2})
+        .on('readable', function () { items.push(this.read()); })
+        .on('end', done);
+
+      fs.createReadStream(rssDir + 'rss.espn.xml').pipe(feedJett);
+    });
+
+    it('should limit the number of items', function () {
+      expect(items).to.have.length(2);
+    });
+
+  });
 });
